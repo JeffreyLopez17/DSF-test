@@ -1,0 +1,93 @@
+{
+  "header" : {
+    "dsfApiType" : "ENQUIRY",
+    "id" : "FT.API.TXN.DETAILS.1.0.0",
+    "dsfApiPhase" : "main",
+    "dsfApiComponent" : "t24data",
+    "metadata" : {
+      "installed" : "NO",
+      "release" : "R21"
+    }
+  },
+  "body" : {
+    "OPEN.BRACKET" : [ {
+      "REQUIRED.SEL" : "Y",
+      "SELECTION.FLDS" : "@ID"
+    } ],
+    "PAGE.SIZE" : "4,99",
+    "FIELD.NAME" : [ {
+      "OPERATION" : [ {
+        "OPERATION" : "@ID"
+      } ],
+      "FIELD.NAME" : "@ID",
+      "LENGTH.MASK" : "25L",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "1"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "TRANSACTION.TYPE"
+      } ],
+      "FIELD.NAME" : "TRANSACTION.TYPE",
+      "LENGTH.MASK" : "4L",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "2"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "DEBIT.ACCT.NO"
+      } ],
+      "FIELD.NAME" : "DEBIT.ACCOUNT",
+      "LENGTH.MASK" : "36L",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "3"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "DEBIT.CURRENCY"
+      } ],
+      "FIELD.NAME" : "DEBIT.CURRENCY",
+      "LENGTH.MASK" : "3L",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "4"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "DEBIT.AMOUNT"
+      } ],
+      "FIELD.NAME" : "DEBIT.AMOUNT",
+      "LENGTH.MASK" : "18R",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "5"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "CREDIT.ACCT.NO"
+      } ],
+      "FIELD.NAME" : "CREDIT.ACCOUNT",
+      "LENGTH.MASK" : "36L",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "6"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "CREDIT.CURRENCY"
+      } ],
+      "FIELD.NAME" : "CREDIT.CURRENCY",
+      "LENGTH.MASK" : "3L",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "7"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "CREDIT.AMOUNT"
+      } ],
+      "FIELD.NAME" : "CREDIT.AMOUNT",
+      "LENGTH.MASK" : "18R",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "8"
+    }, {
+      "OPERATION" : [ {
+        "OPERATION" : "PROCESSING.DATE"
+      } ],
+      "FIELD.NAME" : "TXN.DATE",
+      "LENGTH.MASK" : "11R",
+      "SINGLE.MULTI" : "S",
+      "COLUMN" : "9"
+    } ],
+    "FILE.NAME" : "FUNDS.TRANSFER"
+  }
+}

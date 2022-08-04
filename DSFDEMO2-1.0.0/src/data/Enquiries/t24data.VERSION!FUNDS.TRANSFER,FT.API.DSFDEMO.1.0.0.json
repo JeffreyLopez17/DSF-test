@@ -1,0 +1,40 @@
+{
+  "header" : {
+    "dsfApiType" : "VERSION",
+    "id" : "FUNDS.TRANSFER,FT.API.DSFDEMO.1.0.0",
+    "dsfApiPhase" : "main",
+    "dsfApiComponent" : "t24data",
+    "metadata" : {
+      "installed" : "NO",
+      "release" : "R21"
+    }
+  },
+  "body" : {
+    "FIELDS.PER.LINE" : "1",
+    "FIELD.NO" : [ {
+      "FIELD.NO" : "TRANSACTION.TYPE",
+      "COLUMN" : "1"
+    }, {
+      "FIELD.NO" : "DEBIT.ACCT.NO",
+      "COLUMN" : "2"
+    }, {
+      "FIELD.NO" : "DEBIT.AMOUNT",
+      "COLUMN" : "3"
+    }, {
+      "FIELD.NO" : "DEBIT.CURRENCY",
+      "COLUMN" : "4"
+    }, {
+      "FIELD.NO" : "CREDIT.ACCT.NO",
+      "COLUMN" : "5"
+    }, {
+      "FIELD.NO" : "CREDIT.CURRENCY",
+      "COLUMN" : "6"
+    }, {
+      "FIELD.NO" : "CREDIT.AMOUNT",
+      "COLUMN" : "7"
+    } ],
+    "REPORT.LOCKS" : "YES",
+    "NO.OF.AUTH" : "0",
+    "RECORDS.PER.PAGE" : "1"
+  }
+}
